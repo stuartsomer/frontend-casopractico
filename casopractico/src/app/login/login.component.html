@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="wallpaper"></div>
+    <div class="login" @fadeInOut>
+        <img src="https://datospersonales.infocdmx.org.mx/assets/img/login.png" class="img" >
+        <h1 class="poppins-medium title">Iniciar sesión</h1>
+        
+        <form class="form" [formGroup]="formulario">
+            <label class="poppins-regular">Usuario</label>
+            <mat-form-field>
+                <input type="email" formControlName="usuario" matInput placeholder="Ingresa nombre de usuario">
+                <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+
+            <label class="poppins-regular">Contraseña</label>
+            <mat-form-field>
+                <input [type]="tipo_input" formControlName="contrasenia" matInput placeholder="*****">
+                <mat-icon matSuffix *ngIf="!password_flag" (click)="ver_ocultar_contrasenia()">visibility_off</mat-icon>
+                <mat-icon matSuffix *ngIf="password_flag"  (click)="ver_ocultar_contrasenia()">visibility</mat-icon>
+              </mat-form-field>
+            <div class="action">
+                <button mat-button class="boton-accion poppins-bold" (click)="validarFormulario()" [disabled]="formulario.invalid">Ingresar</button>
+            </div>
+        </form>
+       
+        
+    </div>
+</div>

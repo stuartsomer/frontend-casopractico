@@ -1,0 +1,18 @@
+:host{
+    .contenedor{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white!important
+    }
+    .img{
+        width: 50%;
+    }
+    .mensaje{
+        width: 80%;
+        text-align: center;
+    }
+}

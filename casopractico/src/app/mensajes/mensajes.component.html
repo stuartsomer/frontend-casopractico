@@ -1,0 +1,13 @@
+<div class="contenedor" *ngIf="data.tipo=='error'">
+    <img src="https://cdn.dribbble.com/users/2469324/screenshots/6538803/comp_3.gif" alt="" class="img">
+    <h1>Accesos invalidos</h1>
+    <p class="poppins-medium">Usuario / contraseña incorrecta</p>
+</div>
+<div class="contenedor" *ngIf="data.tipo=='guardado'">
+    <img src="https://i.gifer.com/5de.gif" alt="" class="img">
+    <div class="mensaje"> 
+        <h2>¡Usuario {{ data.data.nombre}} guardado con exito!</h2>
+    </div>
+   
+    
+</div>

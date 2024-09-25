@@ -1,0 +1,204 @@
+html, body {
+    margin: 0;        /* Elimina cualquier margen predeterminado */
+    padding: 0;       /* Elimina cualquier relleno predeterminado */
+    height: 100%;     /* Asegura que html y body ocupen el 100% del alto */
+  }
+
+.boton-accion{
+    border-radius: 5px;
+    background-color: #1E90FF!important;
+    color:white!important;
+    width: auto;
+    min-width: 120px!important;
+}
+.campo_valido{
+  color: #31E981;
+  font-size: 15px;
+  margin-left: 5px;
+}
+.boton-accion-principal{
+  border-radius: 5px;
+  background-color: #F4D03F!important;
+  color:white!important;
+  width: auto;
+  min-width: 80px!important;
+
+}
+.boton-accion-secundario{
+  border-radius: 5px;
+  background-color: #1E90FF!important;
+  color:white!important;
+  width: auto;
+
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+label, input{
+  font-size: 14px!important;
+  color:#2E4057!important;
+}
+h1,h2{
+  color:#23395B
+}
+th{
+  background-color: #23395B !important;
+  color:white;
+  border:none!important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+td{
+  background-color: #F5F5F5!important;
+  border:none!important;
+  border:none;
+  color:#23395B!important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+td:hover{
+  cursor: pointer;
+}
+mat-dialog-content{
+  background-color: white!important;
+}
+mat-dialog-actions{
+  background-color: white;
+}
+.mat-dialog-title{
+background-color: white!important;
+}
+.green-progress .mat-progress-bar-fill::after {
+  background-color: green !important;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: transparent!important;
+
+}
+.mdc-text-field--filled:not(.mdc-text-field--enabled) {
+  background-color: transparent!important;
+
+}
+.modal{
+  background-color: white!important;
+  border-radius: 15px;
+}
+
+.mat-sort-header-arrow{
+  color: White !important;
+}
+.mat-mdc-paginator-container {
+  background-color: #F5F5F5!important;
+  margin-bottom: 50px;
+}

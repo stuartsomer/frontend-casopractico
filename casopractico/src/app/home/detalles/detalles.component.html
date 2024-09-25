@@ -1,0 +1,49 @@
+
+
+<mat-dialog-content>
+    <div class="title">
+        <img [src]="data.usuario.avatar" alt="" class="avatar">
+        <div>
+            <h2>{{formulario.get('nombre').value}} <div *ngIf="formulario.get('nombre').value==''">Nombres Apellidos</div> </h2>
+            <label>{{data.usuario.edad}} años | <mat-icon class="phone-icon">phone</mat-icon> {{data.usuario.telefono}}</label>
+        </div>
+        
+    </div>
+    <form class="container" [formGroup]="formulario"> 
+        <div>
+            <label class="poppins-regular">Nombre <mat-icon *ngIf="formulario.get('nombre')?.valid" class="campo_valido">check_circle</mat-icon></label>
+            <mat-form-field>
+                <input type="text" formControlName="nombre" matInput placeholder="Insertar información" (input)="validarSoloLetras($event, 'nombre')">
+                <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+        </div>
+        
+       <div>
+        <label class="poppins-regular">Dirección <mat-icon *ngIf="formulario.get('direccion')?.valid" class="campo_valido">check_circle</mat-icon></label>
+        <mat-form-field>
+            <input type="text" formControlName="direccion" matInput placeholder="Insertar información" (input)="validarSoloLetras($event, 'direccion')">
+            <mat-icon matSuffix>place</mat-icon>
+        </mat-form-field>
+       </div>
+       <div>
+        <label class="poppins-regular">Código postal <mat-icon *ngIf="formulario.get('cp')?.valid" class="campo_valido">check_circle</mat-icon></label>
+        <mat-form-field>
+            <input type="text" formControlName="cp" maxlength="5"  matInput placeholder="Insertar información" (input)="validarNumero($event,'cp')">
+            <mat-icon matSuffix>contact_mail</mat-icon>
+        </mat-form-field>
+       </div>
+       <div>
+        <label class="poppins-regular">Correo <mat-icon *ngIf="formulario.get('email')?.valid" class="campo_valido">check_circle</mat-icon></label>
+        <mat-form-field>
+            <input type="text" formControlName="email" matInput placeholder="Insertar información">
+            <mat-icon matSuffix>mail</mat-icon>
+        </mat-form-field>
+       </div>
+
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close class="boton-accion-principal poppins-bold">Cerrar</button>
+  <button mat-button mat-dialog-close class="boton-accion-secundario poppins-bold" [disabled]="formulario.invalid" (click)="actualizar()">Guardar</button>
+  
+</mat-dialog-actions>

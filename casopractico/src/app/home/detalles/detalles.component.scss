@@ -1,0 +1,45 @@
+:host{
+    h2{
+        text-align: center;
+    }
+    label{
+        margin-left: 7px;
+        color:#1E90FF!important;
+        display: flex;
+    }
+    .phone-icon{
+        font-size: 17px;
+        margin-left: 7px;
+    }
+    mat-divider{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .title{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        h2{
+            margin-left: 10px;
+        }
+        label{
+            margin-top: -10px;
+            margin-left: 10px;
+        }
+    }
+    .avatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-block;
+        margin-bottom: 30px;
+      }
+    .container{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 17px;
+
+    }
+}
