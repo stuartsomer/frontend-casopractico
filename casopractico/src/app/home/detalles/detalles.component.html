@@ -7,7 +7,6 @@
             <h2>{{formulario.get('nombre').value}} <div *ngIf="formulario.get('nombre').value==''">Nombres Apellidos</div> </h2>
             <label>{{data.usuario.edad}} años | <mat-icon class="phone-icon">phone</mat-icon> {{data.usuario.telefono}}</label>
         </div>
-        
     </div>
     <form class="container" [formGroup]="formulario"> 
         <div>
@@ -17,7 +16,6 @@
                 <mat-icon matSuffix>person</mat-icon>
             </mat-form-field>
         </div>
-        
        <div>
         <label class="poppins-regular">Dirección <mat-icon *ngIf="formulario.get('direccion')?.valid" class="campo_valido">check_circle</mat-icon></label>
         <mat-form-field>
@@ -45,5 +43,4 @@
 <mat-dialog-actions>
   <button mat-button mat-dialog-close class="boton-accion-principal poppins-bold">Cerrar</button>
   <button mat-button mat-dialog-close class="boton-accion-secundario poppins-bold" [disabled]="formulario.invalid" (click)="actualizar()">Guardar</button>
-  
 </mat-dialog-actions>

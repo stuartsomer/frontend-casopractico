@@ -1,25 +1,24 @@
 <div class="" @fadeInOut>
     <div class="header">
-        <div style="display:flex;flex-direction: row; justify-content: center; align-items: center;gap:5px">
+        <div class="header-contenedor">
             <mat-icon>person</mat-icon>
-            <label style="margin-right: 40px;">{{usuario}}</label>
-            <label class="poppins-regular"><mat-icon style="margin-right: 10px;" (click)="cerrarSesion()">logout</mat-icon></label>
+            <label class="nombre-usuario">{{usuario}}</label>
+            <label class="poppins-regular"><mat-icon class="cerrar-sesion" (click)="cerrarSesion()">logout</mat-icon></label>
         </div>
         
         
     </div>
     <div class="contenedor-principal"  >
       <p class="poppins-bold title">SISTEMA DE USUARIOS</p>
-        <img src="https://media.mktg.workday.com/is/image/workday/illustration-group-people-diversity-shape-1?fmt=png-alpha&wid=1000" alt="" class="img" >
-        <div style="display: flex; flex-direction: row; width: 100%; justify-content: space-between; align-items: center;" >
-            <h2 class="poppins-medium usuarios-cantidad">{{usuariosService.usuarios.length}} usuarios</h2>
+      <img src="https://media.mktg.workday.com/is/image/workday/illustration-group-people-diversity-shape-1?fmt=png-alpha&wid=1000" alt="" class="img" >
+      <div class="contador" >
+        <h2 class="poppins-medium usuarios-cantidad">{{usuariosService.usuarios.length}} usuarios</h2>
            
-        </div>
+      </div>
         
     </div>
     <mat-progress-bar mode="indeterminate" class="green-progress" *ngIf="peticion"></mat-progress-bar>
-    <div style="display: flex; flex-direction: row; width: 100%; justify-content: end; align-items: center; ;" >
-     
+    <div class="agregar-usuario">
       <label class="boton-agregar poppins-medium" (click)="agregarUsuario()"><mat-icon>add</mat-icon>Obtener usuario</label> 
   </div>
 
